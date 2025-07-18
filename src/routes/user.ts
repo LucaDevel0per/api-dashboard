@@ -26,6 +26,7 @@ router.get('/users', verifyToken, isAdmin, async (req, res) => {
     }
 }) 
 
+// get um user
 router.get('/users/:id', verifyToken, isAdmin, async (req, res) => {
     const { id } = req.params;
     try {
@@ -42,12 +43,35 @@ router.get('/users/:id', verifyToken, isAdmin, async (req, res) => {
                 }
             });
             if (!user) {
-                return res.status(404).json({ message: 'Usuário nçao encontrado'})
+                return res.status(404).json({ message: 'Usuário não encontrado'})
             }
             res.json(user);
     } catch (err) {
         res.status(500).json({ message: 'Server Error'})
     }
+})
+
+// editar informações de um user
+router.put('/users/:id', verifyToken, isAdmin, async (req, res) => {
+    const { id } = req.params;
+    const { name, email, role, avatarUrl } = req.body;
+    try {
+        const user = await prisma.user.update({
+            where: { id },
+            data: { name, email, role, avatarUrl },
+            select: {
+            id: true,
+            name: true,
+            email: true,
+            role: true,
+            avatarUrl: true,
+            createdAt: true,
+            }
+        });
+        res.json(user);
+        } catch (err) {
+        res.status(404).json({ message: 'Usuário não encontrado ou erro ao atualizar.' });
+        }
 })
 
 export default router;
