@@ -9,6 +9,8 @@ Com muito prazer, eu venho apresentar meu projeto de Controle de User via Dashbo
 
 Um sistema completo de dashboard de usuários com autenticação, autorização e painel administrativo.
 
+Repositório do Front-end: [api-dashboard-frontend](https://github.com/LucaDevel0per/api-dashboard-frontend)
+
 ## 📋 Descrição
 
 Sistema full-stack que permite cadastro e login de usuários, com área específica para administradores gerenciarem todos os usuários do sistema. O projeto inclui autenticação JWT, autorização por roles e um dashboard administrativo completo.
