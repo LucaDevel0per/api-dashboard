@@ -11,7 +11,7 @@ Com muito prazer, eu venho apresentar meu projeto de Controle de User via Dashbo
 
 Sistema full-stack que permite cadastro e login de usuários, com área específica para administradores gerenciarem todos os usuários do sistema. O projeto inclui autenticação JWT, autorização por roles e um dashboard administrativo completo.
 
-[]
+
 ## ✨ Funcionalidades
 
 ### 🔐 Autenticação e Autorização
