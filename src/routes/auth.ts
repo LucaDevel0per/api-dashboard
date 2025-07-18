@@ -11,6 +11,7 @@ const JWT_SECRET = process.env.JWT_SECRET
 // Registro
 router.post('/register', async (req, res) => {
     // VALIDAÇÃO DE DADOS
+    console.log(req.body);
     const { error } = registerSchema.validate(req.body);
     if (error) {
         return res.status(400).json({ message: error.details[0].message })
