@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import authRoutes from './routes/auth';
 import privateRoutes from './routes/privates';
 
+
 dotenv.config();
 
 const app = express();
