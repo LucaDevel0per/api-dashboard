@@ -3,7 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import authRoutes from './routes/auth';
 import privateRoutes from './routes/privates';
-
+import userRoutes from './routes/user'
 
 dotenv.config();
 
@@ -15,6 +15,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/api', authRoutes);
 app.use('/api', privateRoutes);
+app.use('/api', userRoutes)
 
 app.get('/', (req, res) => {
     res.send('🚀 API user Dashboard rodando!')
