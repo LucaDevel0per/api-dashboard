@@ -1,6 +1,11 @@
 # 🚀 User Dashboard API
 
-Um sistema completo de dashboard de usuários com autenticação, autorização e painel administrativo.
+### Olá, devs!
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/95317405-d0ab-4874-a9c6-d64970258b1f" alt="User Dashboard API" width="400">
+</div>
+
+Com muito prazer, eu venho apresentar meu projeto de Controle de User via Dashboard!
 
 ## 📋 Descrição
 
