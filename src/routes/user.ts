@@ -74,4 +74,30 @@ router.put('/users/:id', verifyToken, isAdmin, async (req, res) => {
         }
 })
 
+router.delete('/users/:id', verifyToken, isAdmin, async (req, res) => {
+        const { id } = req.params;
+
+        if (id === req.user.id) {
+            return res.status(400).json({ message: 'Você não pode deletar a si mesmo.' })
+        }
+
+        const userToDelete = await prisma.user.findUnique({ where: { id } });
+
+        if (!userToDelete) {
+            return res.status(404).json({ message: 'User não encontrado' })
+        }
+        
+        if ( userToDelete.role === 'admin') {
+            return res.status(403).json({ message: 'Você não pode deletar outro admin.' });
+        }
+        try {
+        await prisma.user.delete({
+            where: { id }
+        });
+        res.json({ message: 'Usuário deletado com sucesso.' });
+        } catch (err) {
+        res.status(500).json({ message: 'Erro ao deletar user' });
+        }
+    });
+
 export default router;
