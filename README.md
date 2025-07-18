@@ -35,7 +35,7 @@ Sistema full-stack que permite cadastro e login de usuários, com área específ
 ## 🛠️ Tecnologias Utilizadas
 
 ### Backend
-- **Node.js** - Runtime JavaScript
+- **Node.js** - Typescript
 - **Express.js** - Framework web
 - **TypeScript** - Linguagem tipada
 - **Prisma** - ORM para banco de dados
