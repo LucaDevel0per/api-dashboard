@@ -1,5 +1,11 @@
 # 🚀 User Dashboard API
 
+### Olá, devs! 👋
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/95317405-d0ab-4874-a9c6-d64970258b1f" alt="User Dashboard API" width="400">
+</div>
+
+Com muito prazer, eu venho apresentar meu projeto de Controle de User via Dashboard!
 
 Um sistema completo de dashboard de usuários com autenticação, autorização e painel administrativo.
 
@@ -7,7 +13,7 @@ Um sistema completo de dashboard de usuários com autenticação, autorização 
 
 Sistema full-stack que permite cadastro e login de usuários, com área específica para administradores gerenciarem todos os usuários do sistema. O projeto inclui autenticação JWT, autorização por roles e um dashboard administrativo completo.
 
-[]
+
 ## ✨ Funcionalidades
 
 ### 🔐 Autenticação e Autorização
@@ -31,7 +37,7 @@ Sistema full-stack que permite cadastro e login de usuários, com área específ
 ## 🛠️ Tecnologias Utilizadas
 
 ### Backend
-- **Node.js** - Runtime JavaScript
+- **Node.js** - Typescript
 - **Express.js** - Framework web
 - **TypeScript** - Linguagem tipada
 - **Prisma** - ORM para banco de dados
