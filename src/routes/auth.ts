@@ -26,7 +26,7 @@ router.post('/register', async (req, res) => {
             },
         });
 
-        const token = jwt.sign({ id: user.id, role: user.role }, process.JWT_SECRET!, {expiresIn: '1h', 
+        const token = jwt.sign({ id: user.id, role: user.role }, JWT_SECRET!, {expiresIn: '1h', 
         });
 
         const { password: _, ...userWithoutPassword } = user;
