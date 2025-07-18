@@ -1,5 +1,6 @@
 # 🚀 User Dashboard API
 
+
 Um sistema completo de dashboard de usuários com autenticação, autorização e painel administrativo.
 
 ## 📋 Descrição
