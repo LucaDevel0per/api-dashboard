@@ -172,7 +172,6 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 ## 👨‍💻 Autor
 
-**Seu Nome**
 - GitHub: [@LucaDevel0per](https://github.com/LucaDevel0per)
 
 ---
